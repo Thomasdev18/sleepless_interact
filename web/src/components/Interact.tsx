@@ -93,7 +93,7 @@ const Interaction: React.FC<{
     <>
       <div
         style={{
-          translate: numberOfActiveOptions < 2 ? "-1.5rem" : "",
+          translate: numberOfActiveOptions < 2 ? "-0.0rem" : "",
         }}
         className={styles.button}
       >
@@ -103,9 +103,6 @@ const Interaction: React.FC<{
           }`}
         ></div>
 
-        {numberOfActiveOptions > 1 && isActive && (
-          <FontAwesomeIcon icon={"caret-right"} className={styles.indicator} />
-        )}
         {icon && <FontAwesomeIcon icon={icon} className={styles.buttonIcon} />}
         <div className={styles.buttonText}>{text}</div>
       </div>
